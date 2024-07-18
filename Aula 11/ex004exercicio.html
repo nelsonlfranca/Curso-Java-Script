@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMIGRAÇÂO</title>
+</head>
+<body>
+    <H1>Controle de Imigração</H1>
+    País do Imigrante: <input type="text" name="txtpi" id="txtpi">
+    <input type="button" value="Verificar" onclick="mostrar ()">
+
+    <div id="rev">
+
+    </div>
+
+    <script>
+        function mostrar() {
+            var txti = window.document.querySelector('input#txtpi')
+            var res = window.document.querySelector('div#rev')
+            var país = txti.value
+            res.innerHTML =`<p>Seu país de origem é <strong>${país}</strong></p>`
+            if (país == 'Brasil') {
+                rev.innerHTML += '<p>Você é <strong>BRASILEIRO</strong>.</p>'
+            } else {
+                rev.innerHTML += '<p>Você é <strong>ESTRANGEIRO </strong>.</p>'
+            }
+        }
+    </script>
+</body>
+</html>
