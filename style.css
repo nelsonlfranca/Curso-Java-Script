@@ -1,29 +1,86 @@
-body{
-    background: rgb(75, 75, 243);
-    font: normal 15px Arial;
-    }
-    header{
-    color: white;
-    text-align: center;
-    }
-    h1 {
-        text-align: center;
-        color: white;
-    }
-    p {
-        text-align: center;
-    }
-    section{
-    background: white;
+/* Define o estilo global do corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* Define o estilo do contêiner principal */
+.container {
+    background-color: white;
+    padding: 20px 40px;
     border-radius: 10px;
-    padding: 15px;
-    width: 450px;
-    height: 350px;
-    margin: auto;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
-    }
-    footer{
-    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    font-style: italic;
-    }
+    width: 350px;
+}
+
+/* Define o estilo do campo de entrada */
+input {
+    padding: 10px;
+    margin: 10px 0;
+    width: calc(100% - 22px); /* Para ajustar o padding */
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Define o estilo dos botões */
+button {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    width: calc(100% - 22px); /* Para ajustar o padding */
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Estilo do botão Adicionar */
+#adicionarBtn {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+}
+
+#adicionarBtn:hover {
+    background-color: #45a049; /* Verde escuro */
+    transform: scale(1.05); /* Efeito de zoom */
+}
+
+/* Estilo do botão Finalizar */
+#finalizarBtn {
+    background-color: #008CBA; /* Azul */
+    color: white;
+}
+
+#finalizarBtn:hover {
+    background-color: #007bb5; /* Azul escuro */
+    transform: scale(1.05); /* Efeito de zoom */
+}
+
+/* Define o estilo da área onde os números adicionados serão exibidos */
+#numerosAdicionados {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+/* Define o estilo da área onde os resultados serão exibidos */
+#resultado {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}

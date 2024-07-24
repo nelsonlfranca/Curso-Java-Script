@@ -1,31 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício Aula 16</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Verificação e Soma de Números</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Analisador de Números</h1>
-    <section>
-        <div>
-            <p>Número entre 0 e 100 =>
-                <input type="number" name="num" id="txtn">
-                <input type="button" value="Adicionar" onclick="add()">
-            </p>
-        </div>
-        <div>
-            <select name="numeros" id="numeros" size="15"></select>
-            <option>Resultado</option>
-        </div>
-        <div>
-            <input type="button" value="Finalizar" onclick="finalizar()">
-        </div>
-        <div id="res">
-
-        </div>
-    </section>
+    <div class="container">
+        <input type="text" id="numeroInput" placeholder="Digite um número entre 1 e 100">
+        <button id="adicionarBtn">Adicionar</button>
+        <button id="finalizarBtn">Finalizar</button>
+        <div id="numerosAdicionados"></div>
+        <div id="resultado"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
