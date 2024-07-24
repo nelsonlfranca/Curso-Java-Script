@@ -45,7 +45,7 @@ function atualizarNumerosAdicionados() {
 // Função para finalizar e fazer contas com os números
 function finalizar() {
     // Verifica se a lista de números está vazia
-    if (numeros.length === 0) {
+    if (numeros.length == 0) {
         alert("Nenhum número foi adicionado.");
         return;
     }
